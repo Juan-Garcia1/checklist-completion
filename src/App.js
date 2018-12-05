@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./App.css";
 import uuid from "uuid";
 
+import ProgressBar from "./Components/ProgressBar";
+
 class App extends Component {
   state = {
     todos: [
@@ -70,27 +72,10 @@ class App extends Component {
     const { todos, completed, task } = this.state;
     // get the percentage of completed tasks
     const completion = ((completed.length / todos.length) * 100).toFixed(0);
-    // completion.toFixed(0);
-    console.log(completion);
+
     return (
       <main>
-        <div>
-          <p>{completion === "NaN" ? 0 : completion}%</p>
-          <div
-            className="progress"
-            style={{ width: "100%", border: "solid 1px red" }}
-          >
-            <div
-              className="progress--bar"
-              style={{
-                border: "solid 1px blue",
-                background: "green",
-                height: "20px",
-                width: `${completion === "NaN" ? 0 : completion}%`
-              }}
-            />
-          </div>
-        </div>
+        <ProgressBar completion={completion} />
 
         <div>
           {todos.length ? (
