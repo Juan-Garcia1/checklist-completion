@@ -2,8 +2,10 @@
 
 Shows percentage of completed tasks in the checklist.
 
-- [ ] create state
-- [ ] build form
-- [ ] check completed tasks
+- [x] setup state
+- [x] build form
+- [x] check completed tasks
+- [x] delete task
 - [ ] show completed tasks only
-- [ ] calculate completed tasks
+- [x] calculate completed tasks
+- [ ] build component progress bar to show percentage of completed tasks
