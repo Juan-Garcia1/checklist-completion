@@ -1,6 +1,6 @@
 ## Checklist completion
 
-Shows percentage of completed tasks in the checklist.
+Shows progress of completed tasks.
 
 - [x] setup state
 - [x] build form
